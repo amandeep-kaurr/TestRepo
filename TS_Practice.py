@@ -1,4 +1,5 @@
 import time
+from builtins import print
 
 from selenium import webdriver
 from fpdf import FPDF
@@ -7,6 +8,7 @@ driver = webdriver.Chrome(executable_path="C:/BIDS/TestProjectPython/Chrome/chro
 driver.maximize_window()
 driver.get("https://www.top-seos.com/")
 driver.implicitly_wait(5)
+print()
 # driver.find_element_by_xpath("//a[text()='Features']").click()
 # driver.find_element_by_xpath("//a[text()='Projects']").click()
 # driver.find_element_by_xpath("//a[text()='Professionals']").click()
